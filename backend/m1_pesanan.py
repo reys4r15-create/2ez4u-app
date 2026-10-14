@@ -29,12 +29,12 @@ class CustomArray:
 class CustomLinkedList:
     def __init__(self):
         self.head = None
-        self.tail = None  # Penunjuk tail wajib ada agar append O(1)
+        self.tail = None  # Penunjuk tail supaya append di belakang tetap O(1)
         self._size = 0
 
     def append(self, val):
         new_node = Node(val)
-        if not self.head:
+        if self.head is None:
             self.head = new_node
             self.tail = new_node
         else:
@@ -74,12 +74,12 @@ class CustomLinkedList:
         return curr.data
 
     def remove_at(self, idx):
-        if not self.head or idx < 0 or idx >= self._size:
+        if self.head is None or idx < 0 or idx >= self._size:
             return None
         if idx == 0:
             val = self.head.data
             self.head = self.head.next
-            if not self.head:
+            if self.head is None:
                 self.tail = None
             self._size -= 1
             return val

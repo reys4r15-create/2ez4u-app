@@ -12,9 +12,6 @@ Teknik Komputer - Institut Teknologi Sepuluh Nopember
   - `m1_pesanan.py`: Implementasi Custom Array dan Custom Linked List.
   - `m2_antrean.py`: Implementasi Circular Queue dan Stack (Undo).
   - `m3_laporan.py`: Algoritma Insertion Sort dan Binary Search.
-  - `m4_pencarian.py`: Custom Hash Table dan Merge Sort.
-  - `m5_katalog.py`: Katalog BST dan Min-Heap Prioritas.
-  - `m6_peta.py`: Graf Peta, BFS, dan Algoritma Dijkstra.
 - `app.py`: Antarmuka desktop GUI berbasis Tkinter.
 
 ## 🚀 Cara Menjalankan
